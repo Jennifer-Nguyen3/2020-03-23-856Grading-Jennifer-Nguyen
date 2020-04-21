@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_020_03_23_856Grading_Jennifer_Nguyen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jn-1w-VV4">
+                                <rect key="frame" x="30" y="94" width="354" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade % Input:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NI-7J-4iu">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cP-fh-VNU">
+                                        <rect key="frame" x="128" y="0.0" width="226" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekD-Rr-r2Y">
+                                <rect key="frame" x="30" y="178" width="354" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Grading"/>
+                                <connections>
+                                    <action selector="gradingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SAB-5h-ofr"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzH-eQ-wZa">
+                                <rect key="frame" x="30" y="276" width="354" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Letter Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyz-fX-zgk">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nyz-fX-zgk" secondAttribute="trailing" constant="30" id="IYs-Bb-AxU"/>
+                                    <constraint firstItem="nyz-fX-zgk" firstAttribute="top" secondItem="IzH-eQ-wZa" secondAttribute="top" constant="50" id="nx2-z6-aTd"/>
+                                    <constraint firstItem="nyz-fX-zgk" firstAttribute="leading" secondItem="IzH-eQ-wZa" secondAttribute="leading" constant="30" id="zn6-To-KGl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ekD-Rr-r2Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="3p9-7Q-hG2"/>
+                            <constraint firstItem="ekD-Rr-r2Y" firstAttribute="top" secondItem="0jn-1w-VV4" secondAttribute="bottom" constant="50" id="LCV-GK-Bdj"/>
+                            <constraint firstItem="IzH-eQ-wZa" firstAttribute="top" secondItem="ekD-Rr-r2Y" secondAttribute="bottom" constant="50" id="TQf-ij-VmB"/>
+                            <constraint firstItem="0jn-1w-VV4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YL7-Tx-NoC"/>
+                            <constraint firstItem="0jn-1w-VV4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ewx-6q-KRe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0jn-1w-VV4" secondAttribute="trailing" constant="30" id="iNz-uQ-srY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ekD-Rr-r2Y" secondAttribute="trailing" constant="30" id="lrK-GI-UXK"/>
+                            <constraint firstItem="IzH-eQ-wZa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pBn-hK-sGa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IzH-eQ-wZa" secondAttribute="trailing" constant="30" id="tWb-Zr-xjx"/>
+                            <constraint firstItem="0jn-1w-VV4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="yyn-bZ-G7W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gradeTextField" destination="3cP-fh-VNU" id="pZq-rQ-BPM"/>
+                        <outlet property="letterGradeLabel" destination="nyz-fX-zgk" id="H4c-7O-8jQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="112"/>
+        </scene>
+    </scenes>
+</document>
